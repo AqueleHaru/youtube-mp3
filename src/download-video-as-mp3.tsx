@@ -23,7 +23,7 @@ interface Preferences {
 
 // Sanitize input to prevent shell injection
 function sanitizeInput(input: string): string {
-  return input.replace(/[^\w\s\-:/.?=&]/g, "");
+  return input.replace(/[^\w\s\-:.?=&]/g, "");
 }
 
 export default function Command() {
@@ -116,7 +116,7 @@ export default function Command() {
       });
 
       const safeUrl = sanitizeInput(url);
-      exec(`${ytdlPath} --get-title --no-playlist "${safeUrl}"`, (error, stdout) => {
+      exec(`"${ytdlPath}" --get-title --no-playlist "${safeUrl}"`, (error, stdout) => {
         toast.hide();
         if (error || !stdout?.trim()) {
           setTitle(null);
