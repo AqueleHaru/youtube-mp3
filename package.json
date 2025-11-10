@@ -5,11 +5,10 @@
   "description": "Download YouTube videos as MP3.",
   "icon": "youtube.png",
   "license": "MIT",
-  "type": "module",
   "preferences": [
     {
       "name": "ytdlPath",
-      "title": "yt-dlp Path",
+      "title": "YT-DLP Path",
       "description": "Path to the yt-dlp executable. You can enter `which yt-dlp` to terminal to find its path.",
       "type": "textfield",
       "required": false
