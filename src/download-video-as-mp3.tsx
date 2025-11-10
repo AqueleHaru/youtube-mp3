@@ -23,7 +23,7 @@ interface Preferences {
 
 // Sanitize input to prevent shell injection
 function sanitizeInput(input: string): string {
-  return input.replace(/[^\w\s\-:.?=&]/g, "");
+  return input.replace(/[^\w\s\-:/.?=&]/g, "");
 }
 
 export default function Command() {
