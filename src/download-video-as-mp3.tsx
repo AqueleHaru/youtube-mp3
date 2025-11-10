@@ -182,7 +182,7 @@ export default function Command() {
   return (
     <Form
       key={filePickerKey}
-      navigationTitle="Download Video as MP3"
+      navigationTitle="Download YouTube Video as MP3"
       actions={
         <ActionPanel>
           <Action.SubmitForm icon={Icon.Download} title="Download MP3" onSubmit={handleDownload} />
