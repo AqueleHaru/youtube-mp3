@@ -18,7 +18,6 @@ import os from "os";
 // Preferences typing
 interface Preferences {
   ytdlPath?: string;
-  locale?: string;
 }
 
 // Sanitize input to prevent shell injection
