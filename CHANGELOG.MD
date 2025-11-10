@@ -4,7 +4,7 @@ This project follows the [Keep a Changelog](https://keepachangelog.com/en/1.0.0/
 
 ---
 
-## [1.0.0] - 2025-11-10
+## [1.0.0] - {PR_MERGE_DATE}
 
 ### ✨ Added
 
